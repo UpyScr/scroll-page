@@ -1,192 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>autoscroll.js</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="jquery-3.1.1.js"></script> -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <title>autoscroll.js</title>
 
-    <style>
-@font-face {
-  font-family: lato;
-  src: url(Lato-Regular.woff);
-  src: url(Lato-Regular.ttf);
-  font-weight: bold;
-}
-body{font-family: lato;overflow-y: hidden; 
-  overflow-x: hidden;}
-     
-      .AutoScroll {   margin: 0 auto;
-       width: 480px;    color: #fff;    position: relative;    top: 100px;    max-height: 320px;  overflow-y: scroll;   padding: 0px;   border: 0px solid #121212;     }
-      .outer {position: relative; top: 80px;color: white;}
-     
-     
-      tr th {color:#fff;}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="jquery-3.1.1.js"></script> -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-table {line-height: 18px;
-    font-size: 11px;
-    border-collapse: collapse;
-    vertical-align: top;
-    border: 1px #fff solid;
-    background: #000;}
+  <style>
+    @font-face {
+      font-family: lato;
+      src: url(Lato-Regular.woff);
+      src: url(Lato-Regular.ttf);
+      font-weight: bold;
+    }
+
+    body {
+      font-family: lato;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    .AutoScroll {
+      margin: 0 auto;
+      width: 480px;
+      color: #fff;
+      position: relative;
+      top: 100px;
+      max-height: 420px;
+      overflow-y: scroll;
+      padding: 0px;
+      border: 0px solid #121212;
+    }
+
+    .outer {
+      position: relative;
+      top: 80px;
+      color: white;
+    }
 
 
-td, th {  border: 1px #fff solid;
-  text-align: left;
-  padding: 6px 4px;
-  text-shadow: none;
-    color: #fff;
-}
+    tr th {
+      color: #fff;
+    }
+
+    table {
+      line-height: 18px;
+      font-size: 11px;
+      border-collapse: collapse;
+      vertical-align: top;
+      border: 1px #fff solid;
+      background: #000;
+    }
 
 
-    </style>
-  </head>
-  <body>
-    
-        
-          <div class="AutoScroll scroller" id="id" data-config='{"delay" : 3000 , "amount" : 318}'>
-            <table class="marquee-inner" id="table_scroll">
-  
-              <tr>
-                  <th colspan="5" style="text-align: center ;color:#ff0000">
-                    "PROFORMA FOR DISPLAY OF INFORMATIONRELATED TO AIR, WATER, AND HAZARDOUS WASTE GENERATION
-                    हवा, पाणी आणि धोकादायक कचरा निर्माण संबंधित माहितीचा प्रस्ताव"						
-                  
-                  </th>
-               
-               
-                </tr>
-                <tr>
-                  <td>I</td>
-                <td>"Name of the industry/Facility 
-                  with contact details :
-                  (उद्योगाचे नाव व संपर्क)
-                  (As per the Consent to Establish /Operate
-                  (प्रदूषण नियंत्रण मंडळाच्या परवान्याप्रमाणे)"	
-                  </td>
-                <td>"Mining Technology India Pvt.Ltd.
-                  Consent No:MPCB-Format 1.0/CAC/UAN NO.0000094831/jjsajsn
-                  "			
-                  </td>
-                
-                </tr>
-                <tr>
-                  <td>II</td>
-                <td>"Date of Update
-                  (माहिती अद्यावत केलेलीची तारीख)"	
-                  </td>
-                <td style="text-align: center">13-09-2021			
-                </td>
-            
-                </tr>
-                <tr>
-                  <td>III</td>
-                <td>"Details of updated Consent to Operate and Authorization with validity
-                  (प्रदूषण नियंत्रण मंडळाचा परवाना आणि वैधता संबंधित तपशील )"	
-                  </td>
-                <td>" Mining Technology India Pvt.Ltd.
-                  Consent No:MPCB-Format 1.0/CAC/UAN NO.0000094831shdbsbshd
-                  "			
-                  </td>
-                
-                </tr>
-                <tr>
-                  <td>IV</td>
-                <td>"Details of Operational Status
-                  (उद्योग परिचालन स्थितीचा तपशील )"	
-                  </td>
-                <td>Operational (Yes) Operational  (होय)			
-                  </td>
-              
-                </tr>
-              
-              </table>
-            <table class="marquee-inner" id="table_scroll">
-  
-              <tr>
-                    <th colspan="6" style="text-align: center">
-                      "PROFORMA FOR DISPLAY OF INFORMATIONRELATED TO AIR, WATER, AND HAZARDOUS WASTE GENERATION
-                      हवा, पाणी आणि धोकादायक कचरा निर्माण संबंधित माहितीचा प्रस्ताव"						
-                                          
-                    
-                    </th>
-               
-               
-                </tr>
-                <tr>
-                  <td>Sr.No</td>
-                  <td>Product Manufactured (Including/ Recyling Utilization) </td>
-                  
-                         <td>Details of Hazardous Chemical used with Quantity & Purpose </td>
-                             <td>Quantity/ UoM  </td>
-                          <td>Types of HW Generatted Stored & Disposed</td>
-                               <td>Mode of treatment & Disposal ) Pre- processing/ Recycling/ Utilizing/ Reuse/ SLF/ InciIncinerat of etc.</td>
-                  </tr>
-      
-      
-                  <tr>
-                    <td rowspan="3" style="vertical-align: middle;">1</td>
-                  <td rowspan="3">Tools ( HSS Taps, Solid Carbide drills, End Mills and Remers Finshed & Semi finished, Tungsten Carbide product Including, integral Rock Drill Steels, Bits, Detachable Bits, Extension Drill still Equipment, Inserts, Tips, Dies, Stud, and Other Applications, Sandvik tools, Wear resistant parts and Similar product like mining & construction tools, Cartridges (TCC) Tools. etc)  
-      
-                  </td>	   
-                      <td>5.1 Used or spent oil </td>
-                                 <td>8 MT/A </td>
-                              <td>Recycle</td>
-                                   <td>Send to Authorized reprocesser</td>
-                      </tr>
-      
-                      <tr>
-                          
-                                 <td>5.2 Waste or residues containing oi</td>
-                                     <td>8 MT/A  </td>
-                                  <td>Incineration</td>
-                                       <td>CHWTSDF</td>
-                          </tr>
-      
-                          <tr>
-                          
-                                     <td>12.5 Phosphate sludge</td>
-                                         <td>13 MT/A </td>
-                                      <td>Landfill</td>
-                                           <td>CHWTSDF</td>
-                              </tr>
-      
-                              <tr>
-                                <td rowspan="3" style="vertical-align: middle;">2</td>
-                                  <td rowspan="3">Mining and construction Equipment's ( Rock crushing products sutch as crusher, screens, Feeders, mobil plants, drill and other miscellaneous equipments and their spares etc ) </td>
-                                         <td>21.1 Process wastes, resudue and sludges</td>
-                                             <td>17.4 MT/A </td>
-                                          <td>Incineration/ Recycle</td>
-                                               <td>Sale to Authorized party/ CHWTSDF</td>
-                                  </tr>
-               
-              
-                                  <tr>
-                                      
-                                             <td>31.1 process residue and wastes</td>
-                                                 <td>10 MT/A</td>
-                                              <td>Landfill</td>
-                                                   <td>CHWTSDF</td>
-                                      </tr>
-      
-                                      <tr>
-                                          
-                                                 <td>31.1 Empty barrels / containers/ Liners contaminated with hazardous chemical / Wastes</td>
-                                                     <td>1000 MT/A</td>
-                                                  <td>Decontamination</td>
-                                                       <td>Authorized reprocesser</td>
-                                          </tr>
-              </table>
-       
-        </div>
+    td,
+    th {
+      border: 1px #fff solid;
+      text-align: left;
+      padding: 6px 4px;
+      text-shadow: none;
+      color: #fff;
+    }
+  </style>
+</head>
 
-       
-    <script type="text/javascript" src="autoscroll.js"></script>
-    <script type="text/javascript">
-      $(".id-2").scroller();
-    </script>
-  </body>
+<body>
+
+
+  <div class="AutoScroll scroller" id="id" data-config='{"delay" : 3000 , "amount" : 318}'>
+    <table class="marquee-inner" id="table_scroll">
+
+      <tr>
+        <th colspan="5" style="text-align: center ;color:#ff0000">
+          "PROFORMA FOR DISPLAY OF INFORMATIONRELATED TO AIR, WATER, AND HAZARDOUS WASTE GENERATION
+          हवा, पाणी आणि धोकादायक कचरा निर्माण संबंधित माहितीचा प्रस्ताव"
+
+        </th>
+
+
+      </tr>
+      <tr>
+        <td>I</td>
+        <td>"Name of the industry/Facility
+          with contact details :
+          (उद्योगाचे नाव व संपर्क)
+          (As per the Consent to Establish /Operate
+          (प्रदूषण नियंत्रण मंडळाच्या परवान्याप्रमाणे)"
+        </td>
+        <td>"Mining Technology India Pvt.Ltd.
+          Consent No:MPCB-Format 1.0/CAC/UAN NO.0000094831/jjsajsn
+          "
+        </td>
+
+      </tr>
+      <tr>
+        <td>II</td>
+        <td>"Date of Update
+          (माहिती अद्यावत केलेलीची तारीख)"
+        </td>
+        <td style="text-align: center">13-09-2021
+        </td>
+
+      </tr>
+      <tr>
+        <td>III</td>
+        <td>"Details of updated Consent to Operate and Authorization with validity
+          (प्रदूषण नियंत्रण मंडळाचा परवाना आणि वैधता संबंधित तपशील )"
+        </td>
+        <td>" Mining Technology India Pvt.Ltd.
+          Consent No:MPCB-Format 1.0/CAC/UAN NO.0000094831shdbsbshd
+          "
+        </td>
+
+      </tr>
+      <tr>
+        <td>IV</td>
+        <td>"Details of Operational Status
+          (उद्योग परिचालन स्थितीचा तपशील )"
+        </td>
+        <td>Operational (Yes) Operational (होय)
+        </td>
+
+      </tr>
+
+    </table>
+    <table class="marquee-inner" id="table_scroll">
+
+      <tr>
+        <th colspan="6" style="text-align: center">
+          "PROFORMA FOR DISPLAY OF INFORMATIONRELATED TO AIR, WATER, AND HAZARDOUS WASTE GENERATION
+          हवा, पाणी आणि धोकादायक कचरा निर्माण संबंधित माहितीचा प्रस्ताव"
+
+
+        </th>
+
+
+      </tr>
+      <tr>
+        <td>Sr.No</td>
+        <td>Product Manufactured (Including/ Recyling Utilization) </td>
+
+        <td>Details of Hazardous Chemical used with Quantity & Purpose </td>
+        <td>Quantity/ UoM </td>
+        <td>Types of HW Generatted Stored & Disposed</td>
+        <td>Mode of treatment & Disposal ) Pre- processing/ Recycling/ Utilizing/ Reuse/ SLF/ InciIncinerat of etc.</td>
+      </tr>
+
+
+      <tr>
+        <td rowspan="3" style="vertical-align: middle;">1</td>
+        <td rowspan="3">Tools ( HSS Taps, Solid Carbide drills, End Mills and Remers Finshed & Semi finished, Tungsten
+          Carbide product Including, integral Rock Drill Steels, Bits, Detachable Bits, Extension Drill still Equipment,
+          Inserts, Tips, Dies, Stud, and Other Applications, Sandvik tools, Wear resistant parts and Similar product
+          like mining & construction tools, Cartridges (TCC) Tools. etc)
+
+        </td>
+        <td>5.1 Used or spent oil </td>
+        <td>8 MT/A </td>
+        <td>Recycle</td>
+        <td>Send to Authorized reprocesser</td>
+      </tr>
+
+      <tr>
+
+        <td>5.2 Waste or residues containing oi</td>
+        <td>8 MT/A </td>
+        <td>Incineration</td>
+        <td>CHWTSDF</td>
+      </tr>
+
+      <tr>
+
+        <td>12.5 Phosphate sludge</td>
+        <td>13 MT/A </td>
+        <td>Landfill</td>
+        <td>CHWTSDF</td>
+      </tr>
+
+      <tr>
+        <td rowspan="3" style="vertical-align: middle;">2</td>
+        <td rowspan="3">Mining and construction Equipment's ( Rock crushing products sutch as crusher, screens, Feeders,
+          mobil plants, drill and other miscellaneous equipments and their spares etc ) </td>
+        <td>21.1 Process wastes, resudue and sludges</td>
+        <td>17.4 MT/A </td>
+        <td>Incineration/ Recycle</td>
+        <td>Sale to Authorized party/ CHWTSDF</td>
+      </tr>
+
+
+      <tr>
+
+        <td>31.1 process residue and wastes</td>
+        <td>10 MT/A</td>
+        <td>Landfill</td>
+        <td>CHWTSDF</td>
+      </tr>
+
+      <tr>
+
+        <td>31.1 Empty barrels / containers/ Liners contaminated with hazardous chemical / Wastes</td>
+        <td>1000 MT/A</td>
+        <td>Decontamination</td>
+        <td>Authorized reprocesser</td>
+      </tr>
+    </table>
+
+  </div>
+
+
+  <script type="text/javascript" src="autoscroll.js"></script>
+  <script type="text/javascript">
+    $(".id-2").scroller();
+  </script>
+</body>
+
 </html>
