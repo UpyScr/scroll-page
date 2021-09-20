@@ -3,13 +3,11 @@
 
 <head>
   <title>autoscroll.js</title>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- <script type="text/javascript" src="jquery-3.1.1.js"></script> -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <style>
     @font-face {
       font-family: lato;
@@ -21,7 +19,9 @@
     body {
       font-family: lato;
       overflow-y: hidden;
+      margin: 0px;
       overflow-x: hidden;
+      padding: 0px;
     }
 
     .AutoScroll {
@@ -29,16 +29,16 @@
       width: 480px;
       color: #fff;
       position: relative;
-      top: 100px;
-      max-height: 420px;
+      max-height: 320px;
       overflow-y: scroll;
+      top: 0px;
       padding: 0px;
       border: 0px solid #121212;
     }
 
     .outer {
       position: relative;
-      top: 80px;
+      top: 0px;
       color: white;
     }
 
@@ -69,8 +69,6 @@
 </head>
 
 <body>
-
-
   <div class="AutoScroll scroller" id="id" data-config='{"delay" : 3000 , "amount" : 318}'>
     <table class="marquee-inner" id="table_scroll">
 
@@ -80,8 +78,6 @@
           हवा, पाणी आणि धोकादायक कचरा निर्माण संबंधित माहितीचा प्रस्ताव"
 
         </th>
-
-
       </tr>
       <tr>
         <td>I</td>
@@ -95,7 +91,6 @@
           Consent No:MPCB-Format 1.0/CAC/UAN NO.0000094831/jjsajsn
           "
         </td>
-
       </tr>
       <tr>
         <td>II</td>
@@ -104,7 +99,6 @@
         </td>
         <td style="text-align: center">13-09-2021
         </td>
-
       </tr>
       <tr>
         <td>III</td>
@@ -115,7 +109,6 @@
           Consent No:MPCB-Format 1.0/CAC/UAN NO.0000094831shdbsbshd
           "
         </td>
-
       </tr>
       <tr>
         <td>IV</td>
@@ -124,12 +117,9 @@
         </td>
         <td>Operational (Yes) Operational (होय)
         </td>
-
       </tr>
-
     </table>
     <table class="marquee-inner" id="table_scroll">
-
       <tr>
         <th colspan="6" style="text-align: center">
           "PROFORMA FOR DISPLAY OF INFORMATIONRELATED TO AIR, WATER, AND HAZARDOUS WASTE GENERATION
@@ -137,20 +127,15 @@
 
 
         </th>
-
-
       </tr>
       <tr>
         <td>Sr.No</td>
         <td>Product Manufactured (Including/ Recyling Utilization) </td>
-
         <td>Details of Hazardous Chemical used with Quantity & Purpose </td>
         <td>Quantity/ UoM </td>
         <td>Types of HW Generatted Stored & Disposed</td>
         <td>Mode of treatment & Disposal ) Pre- processing/ Recycling/ Utilizing/ Reuse/ SLF/ InciIncinerat of etc.</td>
       </tr>
-
-
       <tr>
         <td rowspan="3" style="vertical-align: middle;">1</td>
         <td rowspan="3">Tools ( HSS Taps, Solid Carbide drills, End Mills and Remers Finshed & Semi finished, Tungsten
@@ -164,23 +149,18 @@
         <td>Recycle</td>
         <td>Send to Authorized reprocesser</td>
       </tr>
-
       <tr>
-
         <td>5.2 Waste or residues containing oi</td>
         <td>8 MT/A </td>
         <td>Incineration</td>
         <td>CHWTSDF</td>
       </tr>
-
       <tr>
-
         <td>12.5 Phosphate sludge</td>
         <td>13 MT/A </td>
         <td>Landfill</td>
         <td>CHWTSDF</td>
       </tr>
-
       <tr>
         <td rowspan="3" style="vertical-align: middle;">2</td>
         <td rowspan="3">Mining and construction Equipment's ( Rock crushing products sutch as crusher, screens, Feeders,
@@ -190,32 +170,23 @@
         <td>Incineration/ Recycle</td>
         <td>Sale to Authorized party/ CHWTSDF</td>
       </tr>
-
-
       <tr>
-
         <td>31.1 process residue and wastes</td>
         <td>10 MT/A</td>
         <td>Landfill</td>
         <td>CHWTSDF</td>
       </tr>
-
       <tr>
-
         <td>31.1 Empty barrels / containers/ Liners contaminated with hazardous chemical / Wastes</td>
         <td>1000 MT/A</td>
         <td>Decontamination</td>
         <td>Authorized reprocesser</td>
       </tr>
     </table>
-
   </div>
-
-
   <script type="text/javascript" src="autoscroll.js"></script>
   <script type="text/javascript">
     $(".id-2").scroller();
   </script>
 </body>
-
 </html>
